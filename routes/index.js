@@ -55,10 +55,11 @@ res.redirect('/');
 });
 
 router.post('/contact', function(req, res, next) {
-  var a = req.body.name;
-  var b = req.body.email;
-  var c = req.body.message;
-  var d = req.body.password;
+  var a = req.body.fname;
+  var b = req.body.lname;
+  var c = req.body.ename;
+  var d = req.body.uname;
+  var e = req.body.cname;
 const nodemailer = require('nodemailer');
 
 // Generate test SMTP service account from ethereal.email
@@ -70,20 +71,20 @@ nodemailer.createTestAccount((err, account) => {
       port: 587,
       secure: false, // true for 465, false for other ports
       auth: {
-          user: b, // generated ethereal user
-          pass: d // generated ethereal password
+          user: "hp529351@gmail.com", // generated ethereal user
+          pass: "hardik@123" // generated ethereal password
       }
   });
 
   // setup email data with unicode symbols
   let mailOptions = {
-      from: '"CREAZYENGINEERS" <hrp1501998@gmail.com>', // sender address
+      from: '"Gangotrai Sanitary" <hrp1501998@gmail.com>', // sender address
       to:'hrp1501998@gmail.com', // list of receivers
       subject:a, // Subject line
       text:b, // plain text body
-      html: '<b>Name:</b></br>'+a+ 
-      '<b>Email:</b></br>'+b+
-      '<b>massage:</b>'+c // html body
+      html: '<b>Frist Name:</b></br>'+a+ 
+      '<b>Last Name:</b></br>'+b+
+      '<b>Email Id:</b>'+c+'<b>Address:</b>'+d+'<b>Feed Back:</b>'+e // html body
   };
   // send mail with defined transport object
   transporter.sendMail(mailOptions, (error, info) => {
