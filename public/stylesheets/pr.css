@@ -1,0 +1,115 @@
+.h*{
+margin:0px;
+padding-top:0px;
+padding:0px;
+
+ 
+}
+#hardik ul{
+list-style:none;
+display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+
+}
+#hardik ul li{
+background-color:red;
+width:150px;
+border:0px;
+line-height:50px;
+text-align:center;
+float:left;
+color:white;
+font-size:18px;
+position:relative;
+height:50px;
+}
+#hardik ul li:hover{
+color:white !important;
+text-decoration:none;
+background-color:red;
+}
+
+#hardik ul li a:hover{
+text-decoration:underline !important;
+}
+
+#hardik ul ul{
+display:none;
+}
+#hardik ul li:hover > ul{
+display:block;
+heigth:50px;
+}
+#hardik ul ul ul{
+margin-left:150px;
+top:150px;
+heigth:50px;
+}
+.r{
+	margin:0px;
+	padding:0px;
+	padding-top:1px;
+	background-color: black;
+	color:white;
+	width:100%;
+	height:56px;
+}
+.a{
+	margin:0px;
+	padding:0px;
+	background-color:white;
+	color:black;
+	width:100%;
+	height:100px;
+}
+.p{
+	background-color:white;
+	color:white;
+}
+.u{
+	background-color:black;
+	color:white;
+}
+.k{
+	background-color:#00123;
+	color:pink;
+}
+.f{
+	*{
+margin:0px;
+padding:0px;
+}
+#container ul{
+list-style:none;
+}
+#container ul li{
+background-color:#3C3E94;
+width:150px;
+border:3px solid white;
+line-height:50px;
+text-align:center;
+float:left;
+color:white;
+font-size:18px;
+position:relative;
+height:50px;
+}
+#container ul li:hover{
+background-color:#388222;
+}
+#container ul ul{
+display:none;
+}
+#container ul li:hover > ul{
+display:block;
+heigth:50px;
+}
+#container ul ul ul {
+margin-left:150px;
+top:150px;
+heigth:50px;
+}
+
+}

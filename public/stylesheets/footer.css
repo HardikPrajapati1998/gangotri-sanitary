@@ -1,0 +1,30 @@
+.f{
+    width: 273px;
+    background:#222;
+    font-size:20px;
+	color:#9d9d9d;
+}
+.f a {
+    display: block;
+    color: #9d9d9d;
+	padding: 8px 8px;
+	font-size: 15px;
+	text-decoration: none;
+	
+	
+	
+}
+.f a:hover {
+	background-color: black;
+	color: white;
+}
+.slider
+{
+position: relative;
+    left: 0px;
+    bottom: 0;
+    width: 300px;
+    background-color:#f7f5f6;
+    color: #101010;
+    text-align: center;
+}
