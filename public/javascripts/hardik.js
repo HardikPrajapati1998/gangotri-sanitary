@@ -42,7 +42,14 @@ function hardik() {
         alert("Please Enter The User-Name ");
         return (false);
     }
-   
+ 
+   var resualt = true;
+    if (h[4].value.length < 1)
+        
+    {
+        alert("Please Enter Feed Back");
+        return (false);
+    }
 
     
 
