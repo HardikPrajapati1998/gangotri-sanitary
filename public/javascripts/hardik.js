@@ -98,12 +98,7 @@ function hardik2()
         alert("Please Enter The password ");
         return (false);
     }
-    resualt = true;
-    if (h[1].value.length < 8) {
-        alert("Please Enter The 8 charecter Password");
-        return (false);
-    }
-}
+    
 
 //function tushar()
 
