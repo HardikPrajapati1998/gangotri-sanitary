@@ -26,7 +26,7 @@ router.get('/kisan', function(req, res, next) {
   res.render('kisan');
 });
 router.get('/contact', function(req, res, next) {
-  res.render('contact');
+  res.render('Contact');
 });
 
 router.get('/fileupload', function(req, res, next) {
