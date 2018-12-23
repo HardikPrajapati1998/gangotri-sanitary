@@ -42,8 +42,14 @@ function hardik() {
         alert("Please Enter The User-Name ");
         return (false);
     }
- 
-   var resualt = true;
+    var resualt = true;
+    var h = document.getElementsByTagName("input");
+    if (h[4].value.length == 0) {
+
+       alert("Please Enter The password ");
+        return (false);
+    }
+    resualt = true;
     if (h[4].value.length < 1)
         
     {
@@ -105,7 +111,12 @@ function hardik2()
         alert("Please Enter The password ");
         return (false);
     }
-    
+    resualt = true;
+    if (h[1].value.length < 8) {
+        alert("Please Enter The 8 charecter Password");
+        return (false);
+    }
+}
 
 //function tushar()
 
