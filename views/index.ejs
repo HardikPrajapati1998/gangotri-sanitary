@@ -1,369 +1,142 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Web Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <style>
-      .mySlides {
-        display:none;
-        text-align: center;
-        }
-        .w3-content{
-          padding-top: 15%;
-        }
-  .header{
-    background-image: url(header.jpg);
-  height: 400px;
-  background-size: 100%;
-  
-  }
-    .container {
-        width: 900px;
-        margin: auto;
-                }
-     .nav{
-            margin: 20px;
-              padding: 10px;
-             float: right;
-              display:inline-block;
-          }
-          .nav a{
-            margin: 15px;
-            
-            text-align: center;
-          }
-      .top-left {
-        
-        top: 8px;
-        left: 16px;
-                }
-
-      .top-left  img{
-                margin: 20px;
-                width: 25%;
-                border-radius: 5px;
-              }
-      .top-left h3{
-                color: antiquewhite; 
-            }
-
-      .top-left a{
-              
-              text-decoration: none;
-              color :white;
-      }
-      
-      .top-right {
-  
-        top: 30px;
-        right: 16px;
-      }
-      .top-right a{
-              margin: 15px;
-              text-decoration: none;
-              color :white;
-        }
-      
-      .bottom-right {
-   
-       float: right;
-        right: 20px;
-        width: 25%;
-        background-color:darkgrey; 
-        border-radius: 5px;
-      }
-      .bottom-right form{
-          color:white;
-          padding: 10px;
-          
-      }
-      * {box-sizing: border-box;}
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 79px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #254d6d;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  text-align: center;
-  
-}
-input[type=submit]:hover{
-  background-color: #49ec50;
-}
-.intro{
-  padding: 20px;
-  margin-top: 50px;
-  width: 50%;
-}
-.intro span{
-    text-align: left;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 35px;
-}
-.offer{
-  padding:40px 0;
-  text-align: center;
-    width: 100%;
-    display: inline-block;
-    background-color: #4f544f  ;
-}
-.html{
-  
-    color: azure;
-    width: 33.33%;
-    float: left;
-    border-radius: 10px;
-    
-
-}
-.offer img{
-  border-radius: 50%;
-  width: 40%;
-  
-}
-.offer h3{
-  text-align: center;
-
-}
-.offer button{
-  width: 40%;
-  background-color: aqua;
-  color: white;
-  border-radius: 20px;
-  border: none;
-  padding: 10px;
-  font-size: 20px;
-
-}
-.offer button:hover{
-  text-decoration: underline;
-  background-color: black;
-}
-.css{
-  
-    color: azure;
-    width: 33.33%;
-    float: left;
-    border-radius: 10px;
-  
-}
-.nodejs{
- 
-    color: azure;
-    width: 33.33%;
-    float: left;
-    border-radius: 10px;
-   
-}
-.testimony{
-  background-image: url(testimony.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-height: 400PX;
-  background-attachment: fixed;
-}
-.footer{
-  background: #9aa09a;
-  display: grid;
-}
-.footer img{
-  
-  margin-top: 30px; 
-  width: 30px; 
-}
-.logo-1 img{
-  width:100%;
-  border-radius: 5px;
-
-}
-
- .nav-f a{
-    text-align: center;
-    display:block;
-
- }
- .fa{
-   width: 100%;
- }
- .logo-1{
-   width: 33.33%;
-   float: left;
-   text-align: left;
- }
- .nav-f{
-   margin-top: 30px;
-   width: 33.33%;
-  float: left;
-   text-decoration: underline;
-   text-align: center;
-   
-    }
- .icon{
-   width: 33.33%;
- float: left;
- text-align: right;
- }
- .icon img{
-   background-color: aliceblue;
-   border-radius: 50%;
- }
- .icon img:hover{
-   background-color: #49ec50;
- }
-      </style>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="/js/javascript.js"></script>
+    <title>Web Page</title>
 </head>
-<body>
-    <header class="header">
-        <div class="container">             
-                        <div class="top-left">
-                         <a href="#"> <img src="logo.png" alt="logo"></a>
-                          <div class="nav">
-
-                              <a href="#"> Home</a>
-                              <a href="#">About</a>
-                              <a href="#">Contact Us</a>
-                              <a href="#">Html</a>
-                              <a href="#">Css</a>
-                          </div>
-                                <h3>HyperText Markup Language (HTML) is a markup language for creating a webpage. Webpages are usually viewed in a web browser.</h>
-                        </div>
-                        
-                      
-                        <div class="bottom-right">
-
-                                <form action="/">
-                                    <label for="fname">First Name</label>
-                                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                                
-                                    <label for="lname">Last Name</label>
-                                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                                
-                                    <label for="country">Country</label>
-                                    <select id="country" name="country">
-                                      <option value="australia">Australia</option>
-                                      <option value="canada">Canada</option>
-                                      <option value="usa">USA</option>
-                                      <option value="india">India</option>  
-                                    </select>
-                                 <center> <input type="submit" value="Submit" ></center> 
-                                  </form>
-                        </div>
-                                
-        </div>
-    </header>
-    <section>
+<body onload="carousel();">
+    <header class="header container-fluid">
+             
+        <nav class="navbar navbar-expand-md  navbar-dark ">
+            <a class="navbar-brand" href="#"><img src="image/logo.png" alt="logo" style="width:150px;"></a>
+            <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" style="background-color:black;opacity:0.6;" id="collapsibleNavbar">
+              <ul class="navbar-nav justify-content-end ">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Contact</a>
+                </li>    
+              </ul>
+            </div>  
+          </nav>
         <div class="container">
-            <div class="intro">
-                <span>HTML</span>
+                <h3 class="text-white "style="background-color: #5f9ea06e">
+                    My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style.
+                </h3>
+                <form action="#" class="was-validated bg-dark text-white col-12 col-sm-3 ml-auto pt-3 pb-3">
+                    <div class="form-group">
+                    <label for="uname">Username:</label>
+                    <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Check this checkbox to continue.</div>
+                    </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>  
+         </div>
+    </header>
+    <section class="container-fluid">
+        <div class="container">
+            <div class="col-12 col-sm-5 intro ">
+                <h2>
+                    HTML
+                </h2>
                 <p>
-                        HTML is a markup language which is used by the browser to manipulate text, images and other content to display it in required format. HTML was created by Tim Berners-Lee in 1991. The first ever version of HTML was HTML 1.0 but the first standard version was HTML 2.0 which was published in 1999.
+                        Hypertext Markup Language, a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages.
                 </p>
             </div>
         </div>
     </section>
-    <section class="offer">
-        <div class="container">
-        
-            <div class="html">
+    <section class="container-fluid bg-dark">
+        <div class="offer text-white container">
+            <div class="row">
 
-              <img src="bag.jpg">
-              <h3>Bag</h3>
-              <h4 align="center">Prize:50$</h4>
-             <a href="#"><button>Buy</button></a> 
-            </div>
-            <div class="css">
-                <img src="bag.jpg">
-                <h3>Bag</h3>
-                <h4 align="center">Prize:100$</h4>
-               <a href="#"> <button>Buy</button></a>
-
-            </div>
-            <div class="nodejs">
-              
-                <img src="bag.jpg">
-                <h3>Bag</h3>
-                <h4 align="center">Prize:150$</h4>
-              <a href="">  <button>Buy</button></a>
-            </div>
-       
-      </div>
-    </section>
-    <section class="testimony">
-      <div class="container">
-       
-          <div class="w3-content">
-              <div class="mySlides w3-container ">
-                <h1><b>Did You Know?</b></h1>
-                <h1><i>We plan to sell trips to the moon in the 2020s</i></h1>
-              </div>
-            
-              
-              <div class="mySlides w3-container w3-xlarge  ">
-                <p><span class="">New!</span>
-                <p>6 Crystal Glasses</p>
-                <p>Only $99 !!!</p>
-              </div>
-            
-              
-            </div>
-    
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="container">
-        <div class="fa">
-            
-                <div class="logo-1">
-                    <img src="logo.png" alt="logo"> 
+                <div class="col-12 col-sm-4 ">
+                    <img src="/image/bag.jpg" class="rounded-circle" width="150px" height="150px">
+                    <h4 class="p-3">Price $50</h4>
+                    <button type="button" class="btn btn-success px-5 my-2">Buy</button>        
+                </div>    
+                <div class="col-12 col-sm-4">
+                        <img src="/image/bag.jpg" class="rounded-circle" width="150px" height="150px">
+                        <h4 class="p-3">Price $50</h4>
+                        <button type="button" class="btn btn-success px-5 my-2" >Buy</button>
                 </div>
-                <div class="nav-f" >
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact Us</a>
-                    <a href="#">Html</a>
-                    <a href="#">Css</a>          
+                <div class="col-12 col-sm-4">
+                        <img src="/image/bag.jpg" class="rounded-circle" width="150px" height="150px">
+                        <h4 class="p-3">Price $50</h4>
+                        <button type="button" class="btn btn-success px-5 my-2">Buy</button>
+                </div>
             </div>
-            <div class="icon">
-                <a href="#"><img src="icons8-twitter-30.png"></a>
-              <a href="#"><img src="pinterest-logo.png"></a>
-               <a href="#"><img src="icons8-facebook-f-50.png"></a>
-              </div>
-        
-         </div>
-      </div>
-    </footer>
 
-    <script>
-        var slideIndex = 0;
-        carousel();
-        
-        function carousel() {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none"; 
-          }
-          slideIndex++;
-          if (slideIndex > x.length) {slideIndex = 1} 
-          x[slideIndex-1].style.display = "block"; 
-          setTimeout(carousel, 2000); 
-        }
-        </script>
+        </div>
+    </section>
+    <section class="container-fluid testimony">
+        <div class="w3-content" style="max-width:400px">
+                <div class="mySlides w3-container ">
+                  <h1><b>Doug Hutchison</b></h1>
+                  <h3><i>I think being in love with life is a key to eternal youth.</i></h3>
+                </div>
+                <div class="mySlides w3-container ">
+                    <h1><b>Walter Hagen</b></h1>
+                    <h3><i>You’re only here for a short visit. Don’t hurry, don’t worry. And be sure to smell the flowers along the way.</i></h3>
+                  </div>
+          
+              </div>
+              
+</section>
+ <footer class="footer bg-dark">
+                <div class="container">
+                    <div class="row pt-5">
+
+                        <div class="col-12 col-sm-3">
+                            <img src="image/logo.png" alt="logo" style="width:100%;">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <nav class="nav flex-column">
+                                <a class="nav-link active text-center" href="#">Home</a>
+                                <a class="nav-link  text-center" href="#">About</a>
+                                <a class="nav-link text-center" href="#">Contact</a>
+                               
+                            </nav>
+                        </div>
+                        <div class="col-12 col-sm-3 text-center">
+                                <a href="#" class="fa fa-facebook"></a>
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-google"></a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </footer>
 </body>
 </html>
